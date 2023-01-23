@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://joe-mwangi.sunny-side.io
+- Solution URL: https://joe-mwangi.github.io/sunny-side-agency-landing-page
 
 ## My process
 
