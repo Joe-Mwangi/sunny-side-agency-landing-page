@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    transition: all .3s linear;
+}
+:root{
+    --red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --Dark-cyan: hsl(167, 40%, 24%);
+    --Dark-blue: hsl(198, 62%, 26%);
+    --moderate-cyan: hsl(168, 26%, 46%);
+    --Very-dark-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsla(194, 67%, 70%, .5);
+    --White: hsl(0, 0%, 100%);
+    --fw1: 900;
+    --fw2: 700;
+}
+
+/* ======================================================================= */
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+h1, h2, h3{
+    font-family: 'Fraunces', serif;
+}
+p{
+    font-size: .98rem;
+}
+ .box-container1{
+    height: 100vh;
+    background-image: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    color: var(--White);
+}
+.logo{
+    height: 1.5rem;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.icon{
+    display: none;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+nav ul li{
+    list-style: none;
+    padding: .5rem 1rem;
+    border-radius: 1.5rem;
+}
+nav ul li:hover{
+    background-color: var(--Grayish-blue);
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--White);
+    font-size: 18px;
+    font-weight: var(--fw2);
+}
+nav ul .contact{
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+}
+nav ul .contact a{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Fraunces', serif;
+    color: var(--Very-dark-blue);
+}
+nav ul .contact:hover a{
+    color: var(--White);
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-transform: uppercase;
+}
+.home h1{
+    font-size: 2.2rem;
+    font-weight: var(--fw1);
+    margin-top: 5rem;
+}
+.home .arrow{
+    width: 1.5rem;
+    height: 6.5rem;
+}
+
+/* --------------------------------------------------------------------- */
+
+ .box-container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+ .box-text{
+    display: flex;
+    flex-direction: column;
+    padding: 20% 15%;
+    gap: 1rem;
+}
+.box-container2 p{
+    line-height: 1.7rem;
+    font-size: .98rem;
+    margin: .8rem 0;
+}
+.box-container2 h2{
+    font-size: 2rem;
+}
+.box-text h3, h5{
+    font-size: 1.5rem;
+    font-weight: var(--fw2);
+    padding: 0 .25rem;
+    height: 22px;
+    width: fit-content;
+    border-radius: 5px;
+    border-bottom: 8px solid var(--yellow);
+    cursor: pointer;
+}
+.box-text h5{
+    border-bottom: 8px solid var(--red); 
+}
+ .box-container2 .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding-top: 20rem;
+    padding-bottom: 5%;
+}
+.box-container2 .box p{
+    width: 60%;
+}
+ .box-container2 .box1{
+    grid-column: 1/2;
+}
+ .box-container2 .box2{
+    grid-column: 2/3;
+    background-image: url(images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+}
+ .box-container2 .box3{
+    background-image: url(images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+}
+ .box-container2 .box5{
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+}
+ .box-container2 .box6{
+    background-image: url(images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+.box-container3{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+.box-container3 h2{
+    text-transform: uppercase;
+    font-weight: var(fw2);
+    color: var(--Very-dark-grayish-blue);
+    margin-bottom: 1rem;
+}
+.box-container3 p{
+    margin: 1rem 0;
+}
+.box-container3 h3{
+    font-size: 1.2rem;
+}
+.box-container3 h4{
+    font-size: .98rem;
+    color: var(--Very-dark-grayish-blue);
+}
+.box-container3 .box{
+    display: flex;
+    gap: .5rem;
+}
+.box-container3 .box .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+.box-container3 .box .card img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+/* ------------------------------------------------------------------------ */
+
+.box-container4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 22rem;
+} 
+.box-container4 .box1{
+    grid-column: 1/2;
+    background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.box-container4 .box2{
+    background-image: url(images/desktop/image-gallery-orange.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.box-container4 .box3{
+    background-image: url(images/desktop/image-gallery-cone.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.box-container4 .box4{
+    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* -------------------------------------------------------------------- */
+.box-container5{
+    background: var(--moderate-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 5% 0;
+} 
+.box-container5 h4{
+    font-size: 1.8rem;
+    font-weight: var(--fw1);
+    color: var(--Dark-cyan);
+}
+.box-container5 a{
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--Dark-cyan);
+    font-weight: var(fw1);
+}
+.box-container5 a:hover{
+    color: var(--White);
+}
+.box-container5 .box1{
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
+}
+.box-container5 .box2{
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+.box-container5 .box2 .img{
+    cursor: pointer;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.box-container5 .box2 .img1{
+    -webkit-mask: url(./images/icon-facebook.svg) no-repeat center;
+    background-color: var(--Dark-cyan);
+}
+.box-container5 .box2 .img2{
+    -webkit-mask: url(./images/icon-instagram.svg) no-repeat center;
+    background-color: var(--Dark-cyan);
+}
+.box-container5 .box2 .img3{
+    -webkit-mask: url(./images/icon-twitter.svg) no-repeat center;
+    background-color: var(--Dark-cyan);
+}
+.box-container5 .box2 .img4{
+    -webkit-mask: url(./images/icon-pinterest.svg) no-repeat center;
+    background-color: var(--Dark-cyan);
+}
+.box-container5 .box2 .img:hover{
+    background: var(--White);
+}
+
+/* ====================================================================== */
+
+@media screen and (max-width: 650px) {
+    .box-container1{
+        height: 35rem;
+        background-image: url(images/desktop/image-header.jpg);
+        background-size: cover;
+        background-position: center;
+        color: var(--White);
+    }
+    nav ul{
+        position: absolute;
+        top: 4rem;
+        left: 0;right: 0;
+        padding-bottom: 2.5rem;
+        padding-top: 4rem;
+        flex-direction: column;
+        gap: .8rem;
+        align-items: center;
+        background-color: var(--White);
+        clip-path: polygon(5% 10%, 90% 10%, 95% 0%, 95% 100%, 5% 100%);
+    }
+    .links{
+        transform: scale(0);
+        transition: transform ease-in-out 300ms;
+    }
+    .menu{
+        transform: rotate(180deg);
+    }
+    .show-links{
+        transform: scale(1);
+    }
+    nav ul .contact{
+        padding: .8rem 1rem;
+        background-color: var(--yellow);
+    }
+    nav ul li a{
+        color: var(--Dark-grayish-blue);
+    }
+    .icon{
+        display: block;
+        background-image: url(images/icon-hamburger.svg);
+        background-size: cover;
+        background-position: center;
+        margin-right: .7rem;
+        height: 1.2rem;
+        width: 1.5rem;
+        cursor: pointer;
+        transition: transform ease-in-out 300ms;
+    }
+    .home{
+        gap: 2rem;
+        padding: 0 10%;
+        text-align: center;
+    }
+    .arrow{
+        height: 4.5rem;
+    }
+
+    .box-container2{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    } 
+    .box-text{
+        text-align: center;
+        align-items: center;
+        padding: 15% 10%;
+    }
+    .box-container2 p{
+        font-size: 1.2rem;
+    }
+    .box-container2 .box{
+        padding-top: 25rem;
+    }
+    .box-container2 .box p{
+        width: 80%;
+    }
+    .box-container2 .box1{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+     .box-container2 .box2{
+        background-image: url(images/mobile/image-transform.jpg);
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .box-container2 .box3{
+       background-image: url(images/mobile/image-stand-out.jpg);
+   }
+    .box-container2 .box5{
+       background-image: url(images/mobile/image-graphic-design.jpg);
+   }
+    .box-container2 .box6{
+       background-image: url(images/mobile/image-photography.jpg);
+   }
+
+
+   .box-container3{
+    padding: 15% 10%;
+   }
+   .box-container3 .box{
+    flex-direction: column;
+    }
+
+    .box-container4{
+        grid-template-columns: repeat(2, 1fr);
+        height: 25rem;
+    } 
+    .box-container4 .box1{
+        grid-column: 1/2;
+        background-image: url(images/mobile/image-gallery-milkbottles.jpg);
+    }
+    .box-container4 .box2{
+        background-image: url(images/mobile/image-gallery-orange.jpg);
+    }
+    .box-container4 .box3{
+        background-image: url(images/mobile/image-gallery-cone.jpg);
+    }
+    .box-container4 .box4{
+        background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+    }
+}
